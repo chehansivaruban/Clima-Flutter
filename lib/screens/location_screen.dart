@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
+import 'package:flutter/material.dart';
 
 class LocationScreen extends StatefulWidget {
   @override
@@ -74,3 +74,7 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
+//
+// double temp = jsonDecode(data)['main']['temp'];
+// int condition = jsonDecode(data)['weather'][0]['id'];
+// String cityName = jsonDecode(data)['name'];
