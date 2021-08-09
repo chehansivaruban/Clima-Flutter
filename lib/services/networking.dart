@@ -9,12 +9,12 @@ class NetworkHelper {
 
   Future getData() async {
     http.Response response = await http.get(Uri.parse(url));
-    print(response.body);
+    // print(response.body);
     if (response.statusCode == 200) {
       String data = response.body;
       var decodedData = jsonDecode(data);
       String cityName = jsonDecode(data)['name'];
-      print(cityName);
+      // print(cityName);
       return decodedData;
     } else {
       print(response.statusCode);
